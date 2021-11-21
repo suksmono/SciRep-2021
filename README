@@ -1,5 +1,9 @@
 The Python and Matlab's codes to reproduce the results in our manuscript
-A.B. Suksmono and Y. Minato, "Quantum computing formulation of some classical Hadamard matrix searching methods and its implementation on a quantum computer" Sci. Rep. (under review)
-will be reorganized under this branch. Pleas note that you should have an access to D-Wave Quantum Computer to reproduce them.
-At the moment, they are zipped an put in the following google drive:
+---
+ A.B. Suksmono and Y. Minato, "Quantum computing formulation of some classical Hadamard 
+ matrix searching methods and its implementation on a quantum computer" Sci. Rep. (under review)
+---
+will be reorganized under this branch. Please note that you should have an access to 
+the D-Wave Quantum Computer to reproduce them correctly. 
+At the moment, the codes are zipped an put into the Google Drive with the following link:
 >>> https://bit.ly/3HDa6kB <<<<
