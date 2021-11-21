@@ -6,4 +6,6 @@ The Python and Matlab's codes to reproduce the results in our manuscript
 will be reorganized under this branch. Please note that you should have an access to 
 the D-Wave Quantum Computer to reproduce them correctly. 
 At the moment, the codes are zipped an put into the Google Drive with the following link:
->>> https://bit.ly/3HDa6kB <<<<
+   >>> https://bit.ly/3HDa6kB <<<<
+Some of the codes are not included in the zip file. Please contact me (absuksmono@gmail.com)
+if you need them.   
