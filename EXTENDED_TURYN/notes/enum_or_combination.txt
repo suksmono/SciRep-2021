@@ -1,0 +1,5 @@
+N=6=>[_, _, _, _, _, _]
+there ar 2^(6*4) enumeration= 16,777,216
+using combination
+>list 2^6 =8x8=64
+>permutation:P(64,4)=64*63*62*61=15,249,024

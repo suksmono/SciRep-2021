@@ -1,0 +1,81 @@
+Constructing New Turyn Type Sequences, T-Sequences and Hadamard Matrices
+STEPHEN LONDON; THESIS, University of Illinois at Chicago 2013; Illinois
+---
+DEF::
+==========
+For n-length sequence A=(a0, a1, ..., a_{n-1})
+
+> Non-periodic Autocorr 0f A:: Na=SUM a_i*a_{i+s}; Na(s)=0 for s>- n
+> Hall polynomial ha(t)=SUM ai*t^i
+> function fa=|ha(exp(i*theta)|^2
+> Xr, ..., Zr be the XYZW seq written in reverse order {x_{n-1}, .., x1, x0}
+> for seq A and B, A>=B for the smallest i where ai != bi; ai>bi
+PROPERTIES
+==========
+Properties of TT-sequences (Turyn-Type) XYZW [indexed by: 0,1, ...]
+
+1. (Nx + Ny + 2Nz + 2Nw)(s)=0, for s>=1; Nx: autocorr of X
+2. {XYZW}-> {ABCD} base sequence; (Na+Nb+Nc+Nd)(s)=0 for s>=1
+3. The following operations preserve TT-sequence XYZW
+	<a> negation any of XYZW
+	<b> reverse any of XYZW
+	<c> swap X and Y
+	<d> negate element with odd indices of all XYZW
+4. for a TT(n), two-identities are applied
+	x^2 + y^2 + z^2 + w^2 = 6n-2
+	(fx + fy + 2fz + 2fw)(t) = 6n-2   
+5. if n is even, xi*x_{n-1-i} + yi*y_{n-1-i} =0; i=1,2 ...,n-2
+
+CONSEQUENCES
+============
+A normalized TT(n) sequence satisfies
+1) x0=y0=z0=w0 = 1
+2) x_{n-1} = y_{n-1} = -1; z_{n-1} =+1
+3) X>= (+/-) Xr, Y>= (+/-) Yr, Z>= (+/-) Zr, W>= (+/-) Wr
+4) x1=x_{n-2} = +1; y_{n-2} = -y1 
+
+==
+Let i be the least number such that x_i = x_{n-1-i}. Then we may
+let x_i = x_{n-1-i} = 1 by reversing and then multiplying X by -1, if necessary. The
+same argument applies to Y . In fact, by applying Theorem 2, we can assume that
+x_1 = x_{n-2} = 1. Now let i be the least number such that z_i != z_{n-1-i}. Then we can
+take z_i = -z_{n-1-i} = 1 by reversing Z, if necessary. Finally, let i < n
+2 -1 be the least number such that w_i = -w_n -2w_{n-2-i}. Then we may take 
+wi = -w_{n-2}w_{n-2-i} = 1 by reversing W, if necessary, and then multiplying it by -1, 
+if necessary.
+==
+
+========
+EXAMPLE
+=======
+  #--4-- # --6--
+X: +-+-	 # +-++-+
+Y: +---  # +++--+
+Z: +--+  # +-+++-
+W: +++   # +----
+PROPERTIES
+P1: checked
+P2: checked
+P3:
+--
+ X : + - + - #	+ - + | + - +
+ Xr: - + - + #  + - + | + - +
+-Xr: + - + - #  - + - | - + -
+--  
+ Y : + - - - # + + + - - +
+ Yr: - + + + # + - - + + +
+-Yr: + - - - # - + + - - -
+--
+ Z : + - + + + - 
+ Zr: - + + + - + 
+-Zr: + - - - + -
+
+... 428 ...
+X  = ( + + + - - - - + + - + - + - - - - - | + + + + - + + - + + + + - - - - + -),
+Xr = ( - + - - - - + + + + - + + - + + + + | - - - - - + - + - + + - - - - + + +);
+--
+Y  = ( + - + + + + + - - + - + - - + - - + | + - - + + + + - + + + + - - - + + -),
+Yr = ( - + + - - - + + + + - + + + + - - + | + - - + - - + - + - - + + + + + - +)
+--
+Z  = (+ - + + + + + - + - - + + + + - + + + - + + - - + + + - + - - + - - -+),
+W  = (+ + + - + - - - - - + + - - + - + + + - - + - + - + + + - + + + + - +).
