@@ -1,0 +1,5 @@
+Here, I will explain how to solve the H-SEARCH (for a particular matrix order)
+1. Define the problem: matrix order, which methods: direct method, Williamson, Baumert-Hall, or Turyn
+2. Generate Hamiltonian: k-body -> 2-body
+3. Implement Hamiltonian into Quantum Processor
+4. Run and read the results
